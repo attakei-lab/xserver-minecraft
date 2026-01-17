@@ -1,0 +1,4 @@
+[account]
+username = "user@example.com"
+password = "XSERVER_PASSWORD"
+serverid = "GET_YOUR_SERVER_ID"
