@@ -44,6 +44,7 @@ def try_extend(page: Page) -> bool:
     page.get_by_text("期限を延長する", exact=True).click()
     page.get_by_text("確認画面に進む", exact=True).click()
     page.get_by_text("期限を延長する", exact=True).click()
+    print("DONE extend")
     return True
 
 
