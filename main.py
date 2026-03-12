@@ -38,7 +38,7 @@ def login(page: Page, settings: Settings) -> Page:
 def try_extend(page: Page) -> bool:
     page.get_by_text("アップグレード・期限延長", exact=True).click()
     msg = page.locator(".freePlanMessage")
-    if msg.count() > 0 and "期限の延長は行えません" in msg[0].text_content():
+    if msg.count() > 0 and "期限の延長は行えません" in msg.text_content():
         print("SKIP extend")
         return False
     page.get_by_text("期限を延長する", exact=True).click()
